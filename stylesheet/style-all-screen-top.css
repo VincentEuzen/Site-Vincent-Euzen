@@ -120,19 +120,19 @@ h2 {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 890px) {
       .cercle-middle {
         display: none;
       }
     }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 890px) {
       .cercle-middle-fin {
         display: none;
       }
     }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 890px) {
       .square-all {
         display: none;
       }

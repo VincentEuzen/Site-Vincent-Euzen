@@ -112,7 +112,7 @@
 .logo-on-card-sapotille {
   position: absolute;
   width: 250px;
-  top: 15%; left: 50%; /* à 50%/50% du parent référent */
+  top: 20%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
@@ -121,7 +121,6 @@
   text-align: center;
   top: 60%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   font-size: 20px;
@@ -132,7 +131,7 @@
 .text-card-sapotille {
   position: absolute;
   text-align: center;
-  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  top: 55%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 
   font-family: 'Montserrat', sans-serif;
@@ -143,7 +142,7 @@
 
 .btn {
   position: absolute;
-  top: 80%; left: 50%; /* à 50%/50% du parent référent */
+  top: 85%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
@@ -170,3 +169,42 @@ right: 30px;
     width: 100vw;
     height: 56.25vw;
 }
+
+
+.logo-on-card-wanaka {
+  position: absolute;
+  width: 150px;
+  top: 19%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.text-card-wanaka {
+  position: absolute;
+  text-align: center;
+  top: 55%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+}
+
+.text-card-papa{
+  position: absolute;
+  text-align: center;
+  top: 55%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+}
+
+/*.text-global-cards p {
+  background-color : rgba(0,0,0,0.4);
+  padding: 10px;
+  border: 1px white solid;
+
+}*/

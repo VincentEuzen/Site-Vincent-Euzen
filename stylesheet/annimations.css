@@ -789,7 +789,7 @@ floating
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(8%);
+    transform: translateY(3%);
   }
   100% {
     transform: translateY(0%);
@@ -801,7 +801,49 @@ floating
     -webkit-transform: translateY(0%);
   }
   50% {
-    -webkit-transform: translateY(8%);
+    -webkit-transform: translateY(3%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
+/*
+==============================================
+floating Custom
+==============================================
+*/
+
+.floating-custom {
+  animation-name: floating-custom;
+  -webkit-animation-name: floating-custom;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-custom {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating-custom {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-3%);
   }
   100% {
     -webkit-transform: translateY(0%);
