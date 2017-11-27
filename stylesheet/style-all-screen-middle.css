@@ -20,14 +20,14 @@
 @media screen and (max-width: 600px) {
       .all-screen-middle {
         height: 100vh;
-        background-image: url(../images/bg-screen-mac-min-width.jpg);
+        background-image: url(../images/bg-idea1.jpg);
         background-size: cover;
       }
     }
 
 @media screen and (max-width: 600px) {
       #ancre-middle p {
-        color: black;
+
       }
     }
 

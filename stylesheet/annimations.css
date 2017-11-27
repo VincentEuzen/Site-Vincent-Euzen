@@ -789,7 +789,7 @@ floating
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(3%);
+    transform: translateY(2%);
   }
   100% {
     transform: translateY(0%);
@@ -801,7 +801,7 @@ floating
     -webkit-transform: translateY(0%);
   }
   50% {
-    -webkit-transform: translateY(3%);
+    -webkit-transform: translateY(2%);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -831,7 +831,7 @@ floating Custom
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(-3%);
+    transform: translateY(-2%);
   }
   100% {
     transform: translateY(0%);
@@ -843,7 +843,7 @@ floating Custom
     -webkit-transform: translateY(0%);
   }
   50% {
-    -webkit-transform: translateY(-3%);
+    -webkit-transform: translateY(-2%);
   }
   100% {
     -webkit-transform: translateY(0%);
