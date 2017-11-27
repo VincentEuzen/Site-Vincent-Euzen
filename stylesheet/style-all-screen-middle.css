@@ -17,9 +17,10 @@
       }
     }
 
-    @media screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
       .all-screen-middle {
         height: 100vh;
+        background-image: url(images/bg-screen-mac-min-width.jpg);
       }
     }
 
@@ -139,3 +140,19 @@
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
+#hidden-menu-class {
+color: #749FBB;
+position: absolute;
+top: 100px
+right: 30px;
+}
+
+@media screen and (max-width: 920px) {
+      #hidden-menu i {
+        color: white;
+      }
+    }
+
+.cercle-middle:hover~.hidden-menu-class i {
+  display: none;
+}
