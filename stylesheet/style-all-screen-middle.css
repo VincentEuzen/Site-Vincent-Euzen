@@ -11,16 +11,23 @@
     height: 56.25vw;
 }
 
-@media screen and (max-width: 920px) {
-      .all-screen-middle img {
+@media screen and (max-width: 600px) {
+      .all-screen-middle video {
         display: none;
       }
     }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 600px) {
       .all-screen-middle {
         height: 100vh;
-        background-image: url(images/bg-screen-mac-min-width.jpg);
+        background-image: url(../images/bg-screen-mac-min-width.jpg);
+        background-size: cover;
+      }
+    }
+
+@media screen and (max-width: 600px) {
+      #ancre-middle p {
+        color: black;
       }
     }
 
@@ -29,7 +36,7 @@
   top: 50%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
   font-size: 10vw;
-  color: black;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   padding: 0;
@@ -45,7 +52,7 @@
   font-weight: lighter;
   font-size: 40px;
   padding: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 
 }
 
@@ -140,7 +147,7 @@
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
-#hidden-menu-class {
+/*#hidden-menu-class {
 color: #749FBB;
 position: absolute;
 top: 100px
@@ -155,4 +162,11 @@ right: 30px;
 
 .cercle-middle:hover~.hidden-menu-class i {
   display: none;
+}*/
+
+
+.video-top {
+  background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
 }
