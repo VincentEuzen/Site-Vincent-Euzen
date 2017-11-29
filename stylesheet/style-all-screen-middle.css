@@ -164,14 +164,14 @@
   z-index: 200;
 }
 
-@media screen and (max-width:890px) { /* phone < 640px */
+@media screen and (max-width:768px) { /* phone < 640px */
  div.introduction h3 {
   display: none;
  }
 }
 
 
-@media screen and (max-width:890px) { /* phone < 640px */
+@media screen and (max-width:768px) { /* phone < 640px */
  div.right-introduction, div.left-introduction {
   float:none;
   clear:both;
@@ -179,7 +179,7 @@
  }
 }
 
-@media screen and (max-width:890px) { /* phone < 640px */
+@media screen and (max-width:768px) { /* phone < 640px */
  div.left-introduction {
   display: none;
  }
