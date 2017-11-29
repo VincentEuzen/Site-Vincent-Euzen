@@ -139,38 +139,38 @@ h2 {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
       .cercle-middle {
         display: none;
       }
     }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
       h2 {
         font-size: 40px;
       }
     }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
       .cercle-middle-fin {
         display: none;
       }
     }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
       .square-all {
         display: none;
       }
     }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
       .right {
         display: none;
       }
     }
 
-@media screen and (max-width:890px) { /* phone < 640px */
+@media screen and (max-width:768px) { /* phone < 640px */
  div.left, div.right {
   float:none;
   clear:both;
