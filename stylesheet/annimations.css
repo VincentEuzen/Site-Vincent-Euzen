@@ -260,6 +260,70 @@ slideRight
   }
 }
 
+
+/*
+==============================================
+slideRightCustom
+==============================================
+*/
+
+
+.slideRightCustom {
+  animation-name: slideRightCustom;
+  -webkit-animation-name: slideRightCustom;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  visibility: visible !important;
+
+}
+
+@keyframes slideRightCustom {
+  0% {
+    transform: translateX(0%);
+  }
+  50%{
+    transform: translateX(190%);
+  }
+  65%{
+    transform: translateX(190%);
+  }
+  80%{
+    transform: translateX(190%);
+  }
+  95%{
+    transform: translateX(190%);
+  }
+  100% {
+    transform: translateX(190%);
+  }
+}
+
+@-webkit-keyframes slideRightCustom {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  50%{
+    -webkit-transform: translateX(190%);
+  }
+  65%{
+    -webkit-transform: translateX(190%);
+  }
+  80%{
+    -webkit-transform: translateX(190%);
+  }
+  95%{
+    -webkit-transform: translateX(190%);
+  }
+  100% {
+    -webkit-transform: translateX(190%);
+  }
+}
+
 /*
 ==============================================
 slideExpandUp

@@ -1,3 +1,4 @@
+
 .all-screen-middle {
   margin: 0;
   padding: 0;
@@ -5,19 +6,19 @@
   width: 100%;
 }
 
-.all-screen-middle img {
+/*.all-screen-middle img {
   background-size: cover;
     width: 100vw;
     height: 56.25vw;
-}
+}*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
       .all-screen-middle video {
         display: none;
       }
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
       .all-screen-middle {
         height: 100vh;
         background-image: url(../images/bg-idea1.jpg);
@@ -25,7 +26,7 @@
       }
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
       #ancre-middle p {
 
       }
@@ -53,7 +54,7 @@
   font-size: 40px;
   padding: 40px;
   margin-bottom: 30px;
-
+  z-index: 200;
 }
 
 .size-icone {
@@ -61,26 +62,186 @@
   color: white;
 }
 
-/*.container {
-  text-align: center;
+
+.introduction {
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.left-introduction {
+  width: 40%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.left-introduction img {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 50%; left: 52%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.right-introduction {
+  width: 60%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+
+.right-introduction h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #749FBB;
+  position: relative;
+  top: 80px;
+  left: 100px;
+  max-width: 80%;
+
+}
+
+.right-introduction h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: black;
+  position: relative;
+  top: 90px;
+  left: 100px;
+  max-width: 80%;
+}
+
+.right-introduction p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #35434a;
+  position: relative;
+  top: 90px;
+  left: 100px;
+  max-width: 80%;
+}
+
+
+.bouton-work {
+  text-decoration: none;
+  color: #749FBB;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  border: 2px solid #749FBB;
+  padding: 15px 60px;
+  z-index: 400;
+}
+
+.bouton-work:hover {
+  text-decoration: none;
   color: white;
-  width: 100%;
+  background-color: #749FBB;
+  border: 2px solid #749FBB;
+  padding: 15px 60px;
 }
 
-.card-custom-1 {
-  background-color: black;
+
+
+.introduction h3 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bolder;
+  font-size: 600px;
+  color: #749FBB;
+  position: absolute;
+  top: 400px;
+  right: 10px;
+
 }
 
-.card-custom-2 {
-  background-color: black;
-}
-*/
 
-/*.cards {
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-}*/
+@media screen and (max-width:890px) { /* phone < 640px */
+ div.introduction h3 {
+  display: none;
+ }
+}
+
+
+@media screen and (max-width:890px) { /* phone < 640px */
+ div.right-introduction, div.left-introduction {
+  float:none;
+  clear:both;
+  width:100%;
+ }
+}
+
+@media screen and (max-width:890px) { /* phone < 640px */
+ div.left-introduction {
+  display: none;
+ }
+}
+
+@media screen and (max-width: 550px) {
+      .right-introduction h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #749FBB;
+        position: relative;
+        top: 110px;
+        left: 50px;
+        max-width: 80%;
+      }
+    }
+
+@media screen and (max-width: 550px) {
+      .right-introduction h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: lighter;
+        font-size: 30px;
+        color: black;
+        position: relative;
+        top: 120px;
+        left: 50px;
+        max-width: 80%;
+      }
+    }
+
+@media screen and (max-width: 550px) {
+      .right-introduction p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+        color: #35434a;
+        position: relative;
+        top: 120px;
+        left: 50px;
+        max-width: 80%;
+      }
+    }
+
+@media screen and (max-width: 550px) {
+      .bouton-work {
+        text-decoration: none;
+        color: #749FBB;
+        position: relative;
+        top: 130px;
+        left: 50px;
+        border: 2px solid #749FBB;
+        padding: 15px 60px;
+        z-index: 400;
+      }
+    }
+
+@media screen and (max-width: 1172px) {
+      .introduction h3 {
+        display: none;
+      }
+    }
+
 
 .card-custom {
   width: 300px;
@@ -202,9 +363,46 @@ right: 30px;
   color: white;
 }
 
-/*.text-global-cards p {
-  background-color : rgba(0,0,0,0.4);
-  padding: 10px;
-  border: 1px white solid;
 
-}*/
+
+
+
+.text-img-middle-2 h3 {
+  position: absolute;
+  text-align: center;
+  top: 50%; left: -100%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: white;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.position-relative:hover~.h2-middle h2 {
+  position: absolute;
+  text-align: center;
+  top: 50%; right: -100%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: white;
+  transform: rotate(-2deg);
+  opacity: 1;
+  transform-origin: bottom left;
+  }
+
+.position-relative:hover~.h3-middle h3 {
+  position: absolute;
+  text-align: center;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: white;
+  transform: rotate(-2deg);
+    opacity: 1;
+    transform-origin: bottom left;
+  }
