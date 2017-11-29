@@ -203,10 +203,10 @@ h2 {
   text-decoration: none;
 }
 
-#grid-size {
+/*#grid-size {
 width: 60px;
 height: 60px;
-}
+}*/
 
 .square-all:hover {
 color: #FC614D;
