@@ -26,6 +26,12 @@ body {
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
+/*.cercle-middle:hover {
+
+  background-color: white;
+
+}*/
+
 
 .cercle-when-clicked {
   border-radius: 50%;
@@ -197,6 +203,11 @@ h2 {
   text-decoration: none;
 }
 
+#grid-size {
+width: 60px;
+height: 60px;
+}
+
 .square-all:hover {
 color: #FC614D;
 }
@@ -251,7 +262,7 @@ color: #FC614D;
 }
 
 .style-menu {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -262,7 +273,7 @@ color: #FC614D;
 }
 
 .style-menu:hover {
-  font-size: 52px;
+  font-size: 42px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -282,19 +293,26 @@ color: #FC614D;
 
 #menu-home {
   position: absolute;
-  top: 25%; left: 68%; /* à 50%/50% du parent référent */
+  top: 26%; left: 80%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
+#menu-about {
+  position: absolute;
+  top: 42%; left: 73%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+
 #menu-realisations {
   position: absolute;
-  top: 50%; left: 55%; /* à 50%/50% du parent référent */
+  top: 58%; left: 74%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-references {
   position: absolute;
-  top: 75%; left: 63%; /* à 50%/50% du parent référent */
+  top: 74%; left: 79%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 

@@ -916,6 +916,47 @@ floating Custom
 
 /*
 ==============================================
+floating
+==============================================
+*/
+
+.floating-origin{
+  animation-name: floating-origin;
+  -webkit-animation-name: floating-origin;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-origin {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(6%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating-origin {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(6%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*
+==============================================
 tossing
 ==============================================
 */
