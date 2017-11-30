@@ -215,11 +215,209 @@
   max-width: 60%;
 }
 
+@media screen and (max-width: 1025px) {
+      .bande-blanche-text {
+  max-width: 60%;
+  height: 600px;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  z-index: 500;
+}
+    }
+
+@media screen and (max-width: 810px) {
+      .bande-blanche-text {
+  max-width: 60%;
+  height: 600px;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  z-index: 500;
+}
+    }
+
+@media screen and (max-width: 655px) {
+      .bande-blanche-text {
+  max-width: 80%;
+  height: 300px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 500;
+}
+    }
+
+@media screen and (max-width: 810px) {
+      .bande-blanche-text {
+  max-width: 80%;
+  height: 600px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 500;
+}
+    }
+
+@media screen and (max-width: 900px) {
+      .photo-and-text {
+  position: relative;
+  height: 800px;
+}
+    }
 
 
+@media screen and (max-width: 810px) {
+      .photo-and-text {
+  position: relative;
+  height: 650px;
+}
+    }
+
+   @media screen and (max-width: 645px) {
+      .photo-and-text {
+  position: relative;
+  height: 650px;
+}
+    }
+
+    @media screen and (max-width: 540px) {
+      .photo-and-text {
+  position: relative;
+  height: 700px;
+}
+    }
+
+    @media screen and (max-width: 459px) {
+      .photo-and-text {
+  position: relative;
+  height: 800px;
+}
+    }
 
 
+@media screen and (max-width: 900px) {
+      .text-on-bande h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #749FBB;
+  position: relative;
+  top: 130px;
+  left: 20%;
+  max-width: 60%;
 
+}
+    }
+
+
+   @media screen and (max-width: 900px) {
+     .text-on-bande h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: black;
+  position: relative;
+  top: 130px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
+
+@media screen and (max-width: 900px) {
+     .text-on-bande p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #35434a;
+  position: relative;
+  top: 140px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
+
+@media screen and (max-width: 850px) {
+      .text-on-bande h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #749FBB;
+  position: relative;
+  top: 150px;
+  left: 20%;
+  max-width: 60%;
+
+}
+    }
+
+
+   @media screen and (max-width: 850px) {
+     .text-on-bande h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: black;
+  position: relative;
+  top: 150px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
+
+@media screen and (max-width: 850px) {
+     .text-on-bande p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  color: #35434a;
+  position: relative;
+  top: 160px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
+
+@media screen and (max-width: 640px) {
+      .text-on-bande h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #749FBB;
+  position: relative;
+  top: 120px;
+  left: 20%;
+  max-width: 60%;
+
+}
+    }
+
+
+   @media screen and (max-width: 640px) {
+     .text-on-bande h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  font-size: 26px;
+  color: black;
+  position: relative;
+  top: 120px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
+
+@media screen and (max-width: 640px) {
+     .text-on-bande p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+  color: #35434a;
+  position: relative;
+  top: 130px;
+  left: 20%;
+  max-width: 60%;
+}
+    }
 
 
 
