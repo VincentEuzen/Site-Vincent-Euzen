@@ -419,8 +419,17 @@
 }
     }
 
-
-
+@media screen and (max-width: 640px) {
+      .photo-and-text img {
+  width: 100%;
+  height: auto;
+  position: relative;
+ top: -30px;
+  max-width: 100%;
+  /*height: auto;*/
+  /*float: right;*/
+}
+}
 
 
 
