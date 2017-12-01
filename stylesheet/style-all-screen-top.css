@@ -105,6 +105,9 @@ body {
   background-color: #749FBB;
   position: relative;
   animation: alternate;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  width: 50%;
 }
 
 .all-screen-width {
