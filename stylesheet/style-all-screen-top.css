@@ -36,10 +36,12 @@ body {
   width: 200px;
   height: 200px;
   background-color: white;
-  z-index: 5;
-  position: absolute;
-  top: 50%; left: 90%; /* à 50%/50% du parent référent */
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  z-index: 50;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(400px); /* On déplace l'objet */
+  animation: alternate;
 }
 
 
@@ -98,6 +100,9 @@ body {
 .all-screen-width {
   float: none;
   clear: both;
+  transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
   width: 100%;
 }
 
@@ -169,6 +174,12 @@ h2 {
     }
 
 @media screen and (max-width: 768px) {
+      .hidden-menu i {
+        display: show;
+      }
+    }
+
+@media screen and (max-width: 768px) {
       .right {
         display: none;
       }
@@ -181,6 +192,8 @@ h2 {
   width:100%;
  }
 }
+
+
 
 
 .test-texte {
@@ -248,15 +261,19 @@ color: #FC614D;
 
 .hidden-for-js {
   display: none;
+  z-index: 2000;
 }
 
 .show {
   display: show; /* P.S: Use `!important` if missing `#content` (selector specificity). */
+  z-index: 2000;
 }
+
 
 #hidden-text-menu a {
   text-decoration: none;
   line-height: 1;
+  z-index: 2000;
 }
 
 .style-menu {
@@ -290,34 +307,32 @@ color: #FC614D;
 
 #menu-home {
   position: absolute;
-  top: 26%; left: 80%; /* à 50%/50% du parent référent */
+  top: 44%; left: 76%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-about {
   position: absolute;
-  top: 42%; left: 73%; /* à 50%/50% du parent référent */
+  top: 58%; left: 72%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-realisations {
   position: absolute;
-  top: 58%; left: 74%; /* à 50%/50% du parent référent */
+  top: 72%; left: 72%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-references {
   position: absolute;
-  top: 74%; left: 79%; /* à 50%/50% du parent référent */
+  top: 86%; left: 75%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
-.hidden-menu {
-  color: white;
-  position: absolute;
-  top: 8%; left: 95%; /* à 50%/50% du parent référent */
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-  z-index: 100;
+.hidden-menu i {
+  color: black;
+  z-index: 1000;
   font-size: 50px;
+  position: absolute;
   display: none;
 }
