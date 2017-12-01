@@ -40,7 +40,7 @@ body {
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: ease; /* Transition de type ease */
-  transform: translateX(400px); /* On déplace l'objet */
+  transform: translateX(190%); /* On déplace l'objet */
   animation: alternate;
 }
 
