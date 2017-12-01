@@ -21,8 +21,13 @@ body {
   background-color: white;
   z-index: 50;
   position: absolute;
-  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  top: 35%; left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-100px); /* On déplace l'objet */
+  animation: alternate;
 }
 
 /*.cercle-middle:hover {
@@ -44,7 +49,13 @@ body {
   animation: alternate;
 }
 
-
+.cercle-when-clicked-return {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-400px); /* On déplace l'objet */
+  animation: alternate;
+}
 
 
 .cercle-middle:hover~.left {
@@ -59,9 +70,7 @@ body {
   color: #FC614D;
 }
 
-.cercle-middle:checked~.left{
-  width: 100%;
-  }
+
 
 .cercle-middle-fin {
   border-radius: 50%;
@@ -95,14 +104,15 @@ body {
   float: left;
   background-color: #749FBB;
   position: relative;
+  animation: alternate;
 }
 
 .all-screen-width {
   float: none;
   clear: both;
   transition-property: width;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+  transition-duration: 1s;
+  transition-timing-function: ease;
   width: 100%;
 }
 
@@ -307,25 +317,25 @@ color: #FC614D;
 
 #menu-home {
   position: absolute;
-  top: 44%; left: 76%; /* à 50%/50% du parent référent */
+  top: 28%; left: 76%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-about {
   position: absolute;
-  top: 58%; left: 72%; /* à 50%/50% du parent référent */
+  top: 42%; left: 72%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-realisations {
   position: absolute;
-  top: 72%; left: 72%; /* à 50%/50% du parent référent */
+  top: 56%; left: 72%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-references {
   position: absolute;
-  top: 86%; left: 75%; /* à 50%/50% du parent référent */
+  top: 70%; left: 75%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
