@@ -80,8 +80,24 @@ body {
   opacity: 0.6;
   z-index: 11;
   position: absolute;
-  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  top: -13%; left: -12%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(1); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.cercle-middle-fin-extend {
+  position: absolute;
+  top: 0%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(5); /* On déplace l'objet */
+  animation: alternate;
 }
 
 #semi-cercle {
@@ -96,6 +112,18 @@ body {
   height: 260px;
   z-index: 10;
   transform-origin: center;
+}
+
+.img-semi-cercle-extend {
+  position: absolute;
+  top: 0%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(5); /* On déplace l'objet */
+  transform: rotate(360deg);
+  animation: alternate;
 }
 
 .left {
