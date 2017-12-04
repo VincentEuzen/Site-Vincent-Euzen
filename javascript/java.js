@@ -50,8 +50,9 @@ $('.box-test-1').hover(function(){
     $('.btn-box').toggleClass('btn-box-hover');
   });
 
+
 $('.box-test-1').hover(function(){
-    $(this).toggleClass('fond-noir');
+    $('.img-bg').toggleClass('img-bg-hover');
   });
 
 $('.box-test-2').hover(function(){
@@ -62,7 +63,35 @@ $('.box-test-2').hover(function(){
     $('.btn-box-2').toggleClass('btn-box-hover-2');
   });
 
+
 $('.box-test-2').hover(function(){
-    $(this).toggleClass('fond-noir');
+    $('.img-bg-2').toggleClass('img-bg-hover-2');
+  });
+
+$('.box-test-3').hover(function(){
+    $('.text-box-3').toggleClass('text-box-hover-3');
+  });
+
+$('.box-test-3').hover(function(){
+    $('.btn-box-3').toggleClass('btn-box-hover-3');
+  });
+
+
+$('.box-test-3').hover(function(){
+    $('.img-bg-3').toggleClass('img-bg-hover-3');
+  });
+
+
+$('.box-test-4').hover(function(){
+    $('.text-box-4').toggleClass('text-box-hover-4');
+  });
+
+$('.box-test-4').hover(function(){
+    $('.btn-box-4').toggleClass('btn-box-hover-4');
+  });
+
+
+$('.box-test-4').hover(function(){
+    $('.img-bg-4').toggleClass('img-bg-hover-4');
   });
 });

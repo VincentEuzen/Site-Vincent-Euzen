@@ -650,10 +650,6 @@ right: 30px;
   color: white;
 }
 
-
-
-
-
 .text-img-middle-2 h3 {
   position: absolute;
   text-align: center;
@@ -772,19 +768,28 @@ margin: 0 auto;
   height: 490px;
   overflow: hidden;
   position: relative;
-  background: #000000;
+  background: black;
+  border-radius: 4px;
+}
+
+.img-bg {
   background-image: url(../images/bg-box.jpg);
+  width: 490px;
+  height: 490px;
   -moz-transition: opacity 0.9s;
 -webkit-transition: opacity 0.9s;
 -o-transition: opacity 0.9s;
-border-radius: 4px;
 }
 
-.box-test-1:hover {
-  opacity:0.9;
--moz-transition: opacity 0.7s;
--webkit-transition: opacity 0.7s;
--o-transition: opacity 0.7s;
+
+.img-bg-hover {
+  background-image: url(../images/bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  opacity: 0.6;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
 }
 
 .text-box {
@@ -833,8 +838,7 @@ border-radius: 4px;
 }
 
 /*.fond-noir {
-  opacity: 0.2;
-  background: #000000;
+  background-color: black;
 }*/
 
 .box-test-2 {
@@ -846,20 +850,31 @@ border-radius: 4px;
   overflow: hidden;
   position: relative;
   background: #000000;
-  background-image: url(../images/bg-box.jpg);
+  border-radius: 4px;
+}
+
+
+.img-bg-2 {
+  background-image: url(../images/sapotille-bg-box.jpg);
+  width: 490px;
+  height: 490px;
   -moz-transition: opacity 0.9s;
 -webkit-transition: opacity 0.9s;
 -o-transition: opacity 0.9s;
-border-radius: 4px;
 }
 
 
-.box-test-2:hover {
-  opacity:0.9;
--moz-transition: opacity 0.7s;
--webkit-transition: opacity 0.7s;
--o-transition: opacity 0.7s;
+.img-bg-hover-2 {
+  background-image: url(../images/sapotille-bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  opacity: 0.6;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
 }
+
+
 
 
 .text-box-2 {
@@ -900,6 +915,186 @@ border-radius: 4px;
 }
 
 .btn-box-hover-2 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-150px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.separateur {
+  height: 40px;
+}
+
+// BOX 2
+
+.all-box-2 {
+  position: relative;
+  height: 100%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.conteneur-2 {
+display: table;
+margin: 0 auto;
+}
+
+.box-test-3 {
+  display: inline-block;
+  margin: 0 20px;
+  width: 490px;
+  max-width: 80%;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  background: black;
+  border-radius: 4px;
+}
+
+.img-bg-3 {
+  background-image: url(../images/bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
+}
+
+
+.img-bg-hover-3 {
+  background-image: url(../images/bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  opacity: 0.6;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
+}
+
+.text-box-3 {
+  font-size: 50px;
+  position: absolute;
+  top: 350px; left: 50px; /* à 50%/50% du parent référent */
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+}
+
+.text-box-hover-3 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-100px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.btn-box-3 {
+  position: absolute;
+  top: 550px;
+  left: 50px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-3:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-hover-3 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-150px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+/*.fond-noir {
+  background-color: black;
+}*/
+
+.box-test-4 {
+  display: inline-block;
+  margin: 0 20px;
+  width: 490px;
+  max-width: 80%;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  background: #000000;
+  border-radius: 4px;
+}
+
+
+.img-bg-4 {
+  background-image: url(../images/sapotille-bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
+}
+
+
+.img-bg-hover-4 {
+  background-image: url(../images/sapotille-bg-box.jpg);
+  width: 490px;
+  height: 490px;
+  opacity: 0.6;
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
+}
+
+
+
+
+.text-box-4 {
+  font-size: 50px;
+  position: absolute;
+  top: 350px; left: 50px; /* à 50%/50% du parent référent */
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+}
+
+.text-box-hover-4 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-100px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.btn-box-4 {
+  position: absolute;
+  top: 550px;
+  left: 50px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-4:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-hover-4 {
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease; /* Transition de type ease */
