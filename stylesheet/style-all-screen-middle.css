@@ -754,13 +754,19 @@ width: 100%;
 
 .all-box {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.conteneur {
+display: table;
+margin: 0 auto;
 }
 
 .box-test-1 {
-  position: absolute;
-  top: 50%; left: 50%; /* à 50%/50% du parent référent */
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  display: inline-block;
+  margin: 0 20px;
   width: 490px;
   max-width: 80%;
   height: 490px;
@@ -780,7 +786,6 @@ border-radius: 4px;
 -webkit-transition: opacity 0.7s;
 -o-transition: opacity 0.7s;
 }
-
 
 .text-box {
   font-size: 50px;
@@ -831,3 +836,73 @@ border-radius: 4px;
   opacity: 0.2;
   background: #000000;
 }*/
+
+.box-test-2 {
+  display: inline-block;
+  margin: 0 20px;
+  width: 490px;
+  max-width: 80%;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  background: #000000;
+  background-image: url(../images/bg-box.jpg);
+  -moz-transition: opacity 0.9s;
+-webkit-transition: opacity 0.9s;
+-o-transition: opacity 0.9s;
+border-radius: 4px;
+}
+
+
+.box-test-2:hover {
+  opacity:0.9;
+-moz-transition: opacity 0.7s;
+-webkit-transition: opacity 0.7s;
+-o-transition: opacity 0.7s;
+}
+
+
+.text-box-2 {
+  font-size: 50px;
+  position: absolute;
+  top: 350px; left: 50px; /* à 50%/50% du parent référent */
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+}
+
+.text-box-hover-2 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-100px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.btn-box-2 {
+  position: absolute;
+  top: 550px;
+  left: 50px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-2:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-box-hover-2 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-150px); /* On déplace l'objet */
+  animation: alternate;
+}

@@ -53,4 +53,16 @@ $('.box-test-1').hover(function(){
 $('.box-test-1').hover(function(){
     $(this).toggleClass('fond-noir');
   });
+
+$('.box-test-2').hover(function(){
+    $('.text-box-2').toggleClass('text-box-hover-2');
+  });
+
+$('.box-test-2').hover(function(){
+    $('.btn-box-2').toggleClass('btn-box-hover-2');
+  });
+
+$('.box-test-2').hover(function(){
+    $(this).toggleClass('fond-noir');
+  });
 });
