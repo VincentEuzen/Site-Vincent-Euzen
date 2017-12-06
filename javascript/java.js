@@ -1,3 +1,5 @@
+  // Annimation au click pour cercle bouton
+
 $(document).ready(function() {
 
 
@@ -9,6 +11,7 @@ $(document).ready(function() {
     //   $(this).removeClass('cercle-middle').addClass('cercle-when-clicked');
     // }
     $('.left').toggleClass('all-screen-width');
+    $('.right').toggleClass('right-hidden');
     // $('.cercle-middle-fin').toggleClass('cercle-middle-fin-extend');
     // $('#img-semi-cercle').toggleClass('img-semi-cercle-extend');
     $('#hidden-text-menu').toggleClass("hidden-for-js");
@@ -17,35 +20,32 @@ $(document).ready(function() {
     $('.texte').toggleClass("show");
   });
 
-  // $('.cercle-middle').on('hover', function() {
-  //   $(this).toggleClass('box-hover');
 
+  // Effet Smooth scroll
 
   var scroll = new SmoothScroll('a[href*="#"]');
 
+  // Effet defilement
+
+  var defile;// l'element a deplacer
+var psinit = 580; // position horizontale de depart
+var pscrnt = psinit;
+function texteDefile() {
+if (!defile) defile = document.getElementById('text-defillant');
+if (defile) {
+if(pscrnt < ( - defile.offsetWidth) ){
+pscrnt = psinit;
+} else {
+pscrnt+= -1; // pixel par deplacement
+}
+defile.style.left = pscrnt+"px";
+}
+}
+setInterval("texteDefile()",20); // delai de deplacement
 });
 
-// $(document).ready(function() {
 
-// $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-//         var page = $(this).attr('href'); // Page cible
-//         var speed = 750; // Durée de l'animation (en ms)
-//         $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-//         return false;
-//   });
-
-// $('#menu-about').on('click', 'a[href^="#"]', function (event) {
-//     event.preventDefault();
-
-//     $('html, body').animate({
-//       scrollTop: $($.attr(this, 'href')).offset().top
-//      }, 500);
-// });
-
-
-
-// });
-
+  // Boxs
 
 $(document).ready(function() {
 
@@ -104,6 +104,8 @@ $('.box-test-4').hover(function(){
 });
 
 
+  // Effet parallax
+
 $(document).ready(function () {
     $('.all-screen-top').mousemove(function (e) {
         parallax(e, document.getElementById('pic-hole'), 1);
@@ -117,3 +119,30 @@ function parallax(e, target, layer) {
     var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
     $(target).offset({ top: y ,left : x });
 };
+
+
+//   // Changer photo dynamiquement top
+
+// $(document).ready(function() {
+// var pictures = [
+//         "https://img15.hostingpics.net/pics/809024vincenteuzenpicturewide.jpg",
+//         "https://img15.hostingpics.net/pics/314278Goodonesquare.png",
+
+//     ];
+//     var img = document.getElementById("pic-me");
+//     var currentIndex = 0;
+//     var slideshowTimer;
+
+//     (function nextImg(){
+//         slideshowTimer = Date.now();
+//         img.src=pictures[currentIndex];
+//         img.onload=function(){
+//             currentIndex = (currentIndex + 1) % pictures.length;
+//             var remainingTime = 3000 - (Date.now() - slideshowTimer);
+//             if(remainingTime>0){ setTimeout(nextImg, remainingTime); }
+//             else { nextImg(); }
+//         };
+//     })();
+
+//     });
+

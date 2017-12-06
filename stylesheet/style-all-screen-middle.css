@@ -774,7 +774,7 @@ margin: 0 auto;
 }
 
 .img-bg {
-  background-image: url(../images/bg-box.jpg);
+  background-image: url(../images/bg-loulouandlola.jpg);
   width: 490px;
   height: 490px;
   -moz-transition: opacity 0.9s;
@@ -784,7 +784,7 @@ margin: 0 auto;
 
 
 .img-bg-hover {
-  background-image: url(../images/bg-box.jpg);
+  background-image: url(../images/bg-loulouandlola.jpg);
   width: 490px;
   height: 490px;
   opacity: 0.6;
@@ -927,7 +927,17 @@ margin: 0 auto;
   height: 40px;
 }
 
-// BOX 2
+
+
+
+
+
+
+
+
+
+
+// DEUX AUTRES BOXES (hidden for now in the HTML)
 
 .all-box-2 {
   position: relative;

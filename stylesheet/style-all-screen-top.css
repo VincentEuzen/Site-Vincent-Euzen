@@ -155,6 +155,10 @@ body {
   position: relative;
 }
 
+.right-hidden {
+  display: none;
+}
+
 .image-right-1 {
   position: absolute;
   top: 50%; left: 50%; /* à 50%/50% du parent référent */
