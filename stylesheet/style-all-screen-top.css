@@ -288,7 +288,7 @@ color: #FC614D;
   bottom: 0px;
   right: 20px;
   transform: translateY(-50%);
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 
@@ -311,7 +311,7 @@ color: #FC614D;
 
 #explore #fleche {
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   right: 14px;
 }
 
