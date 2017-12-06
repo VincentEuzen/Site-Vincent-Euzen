@@ -21,23 +21,30 @@ $(document).ready(function() {
   //   $(this).toggleClass('box-hover');
 
 
-
-
-});
-
-$(document).ready(function() {
-
-$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-        var page = $(this).attr('href'); // Page cible
-        var speed = 750; // Durée de l'animation (en ms)
-        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-        return false;
-  });
-
-
-
+  var scroll = new SmoothScroll('a[href*="#"]');
 
 });
+
+// $(document).ready(function() {
+
+// $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+//         var page = $(this).attr('href'); // Page cible
+//         var speed = 750; // Durée de l'animation (en ms)
+//         $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+//         return false;
+//   });
+
+// $('#menu-about').on('click', 'a[href^="#"]', function (event) {
+//     event.preventDefault();
+
+//     $('html, body').animate({
+//       scrollTop: $($.attr(this, 'href')).offset().top
+//      }, 500);
+// });
+
+
+
+// });
 
 
 $(document).ready(function() {
