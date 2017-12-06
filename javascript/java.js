@@ -95,3 +95,18 @@ $('.box-test-4').hover(function(){
     $('.img-bg-4').toggleClass('img-bg-hover-4');
   });
 });
+
+
+$(document).ready(function () {
+    $('.all-screen-top').mousemove(function (e) {
+        parallax(e, document.getElementById('pic-hole'), 1);
+        parallax(e, document.getElementById('pic-me'), 2);
+    });
+});
+
+function parallax(e, target, layer) {
+    var layer_coeff = 10 / layer;
+    var x = ($(window).width ()) / 3 - (e.pageX - ($(window).width())) / layer_coeff;
+    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+    $(target).offset({ top: y ,left : x });
+};
