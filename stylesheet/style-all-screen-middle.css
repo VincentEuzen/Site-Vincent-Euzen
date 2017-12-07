@@ -765,7 +765,6 @@ margin: 0 auto;
   display: inline-block;
   margin: 0 20px;
   width: 490px;
-  max-width: 80%;
   height: 490px;
   overflow: hidden;
   position: relative;
@@ -846,7 +845,6 @@ margin: 0 auto;
   display: inline-block;
   margin: 0 20px;
   width: 490px;
-  max-width: 80%;
   height: 490px;
   overflow: hidden;
   position: relative;
@@ -856,7 +854,7 @@ margin: 0 auto;
 
 
 .img-bg-2 {
-  background-image: url(../images/sapotille-bg-box.jpg);
+  background-image: url(../images/sapotille-bg-box-3.jpg);
   width: 490px;
   height: 490px;
   -moz-transition: opacity 0.9s;
@@ -866,7 +864,7 @@ margin: 0 auto;
 
 
 .img-bg-hover-2 {
-  background-image: url(../images/sapotille-bg-box.jpg);
+  background-image: url(../images/sapotille-bg-box-3.jpg);
   width: 490px;
   height: 490px;
   opacity: 0.6;
@@ -923,7 +921,7 @@ margin: 0 auto;
   animation: alternate;
 }
 
-.separateur {
+.separateur1 {
   height: 40px;
 }
 
@@ -955,7 +953,6 @@ margin: 0 auto;
   display: inline-block;
   margin: 0 20px;
   width: 490px;
-  max-width: 80%;
   height: 490px;
   overflow: hidden;
   position: relative;
@@ -964,7 +961,7 @@ margin: 0 auto;
 }
 
 .img-bg-3 {
-  background-image: url(../images/bg-box.jpg);
+  background-image: url(../images/wanaka-bg-box.jpg);
   width: 490px;
   height: 490px;
   -moz-transition: opacity 0.9s;
@@ -974,7 +971,7 @@ margin: 0 auto;
 
 
 .img-bg-hover-3 {
-  background-image: url(../images/bg-box.jpg);
+  background-image: url(../images/wanaka-bg-box.jpg);
   width: 490px;
   height: 490px;
   opacity: 0.6;
@@ -1036,7 +1033,6 @@ margin: 0 auto;
   display: inline-block;
   margin: 0 20px;
   width: 490px;
-  max-width: 80%;
   height: 490px;
   overflow: hidden;
   position: relative;
@@ -1046,7 +1042,7 @@ margin: 0 auto;
 
 
 .img-bg-4 {
-  background-image: url(../images/sapotille-bg-box.jpg);
+  background-image: url(../images/be-bg-box.jpg);
   width: 490px;
   height: 490px;
   -moz-transition: opacity 0.9s;
@@ -1056,7 +1052,7 @@ margin: 0 auto;
 
 
 .img-bg-hover-4 {
-  background-image: url(../images/sapotille-bg-box.jpg);
+  background-image: url(../images/be-bg-box.jpg);
   width: 490px;
   height: 490px;
   opacity: 0.6;
@@ -1086,6 +1082,8 @@ margin: 0 auto;
   animation: alternate;
 }
 
+
+
 .btn-box-4 {
   position: absolute;
   top: 550px;
@@ -1112,3 +1110,98 @@ margin: 0 auto;
    transform: translateY(-150px); /* On déplace l'objet */
   animation: alternate;
 }
+
+#cards-all-middle {
+  display: none;
+}
+
+.separateur2 {
+  height: 40px;
+}
+
+@media screen and (max-width: 1066px) {
+      .separateur2 {
+  height: 2px;
+}
+    }
+
+@media screen and (max-width: 650px) {
+      .box-test-1 {
+        width: 350px;
+      }
+    }
+
+
+@media screen and (max-width: 650px) {
+      .text-box-4 {
+  font-size: 50px;
+  position: absolute;
+  top: 300px; left: 50px; /* à 50%/50% du parent référent */
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+}
+    }
+
+@media screen and (max-width: 650px) {
+      .text-box-hover-4 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-130px); /* On déplace l'objet */
+  animation: alternate;
+}
+    }
+
+
+@media screen and (max-width: 650px) {
+      .text-box-3 {
+  font-size: 50px;
+  position: absolute;
+  top: 300px; left: 50px; /* à 50%/50% du parent référent */
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+}
+    }
+
+@media screen and (max-width: 650px) {
+      .text-box-hover-3 {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-130px); /* On déplace l'objet */
+  animation: alternate;
+}
+    }
+
+
+
+@media screen and (max-width: 650px) {
+      .box-test-2 {
+        width: 350px;
+      }
+    }
+
+@media screen and (max-width: 650px) {
+      .box-test-3 {
+        width: 350px;
+      }
+    }
+
+@media screen and (max-width: 650px) {
+      .box-test-4 {
+        width: 350px;
+      }
+    }
+
+
+
+
+/*@media screen and (max-width: 650px) {
+      #cards-all-middle {
+        display: show;
+      }
+    }*/

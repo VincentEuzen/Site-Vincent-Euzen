@@ -383,13 +383,13 @@ color: #FC614D;
 
 #menu-about {
   position: absolute;
-  top: 42%; left: 72%; /* à 50%/50% du parent référent */
+  top: 42%; left: 71%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #menu-realisations {
   position: absolute;
-  top: 56%; left: 72%; /* à 50%/50% du parent référent */
+  top: 56%; left: 69%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
@@ -406,3 +406,4 @@ color: #FC614D;
   position: absolute;
   display: none;
 }
+
