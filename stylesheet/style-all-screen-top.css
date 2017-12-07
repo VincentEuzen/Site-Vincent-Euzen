@@ -139,8 +139,7 @@ body {
 }
 
 .all-screen-width {
-  float: none;
-  clear: both;
+  float: left;
   transition-property: width;
   transition-duration: 1s;
   transition-timing-function: ease;
@@ -156,7 +155,11 @@ body {
 }
 
 .right-hidden {
-  display: none;
+  float: right;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  width: 0%;
 }
 
 .image-right-1 {
@@ -170,6 +173,9 @@ body {
   min-width: 110%;
 }
 
+.image-right-1-hidden {
+  display: none;
+}
 
 
 .image-right-2 {
@@ -179,6 +185,10 @@ body {
   z-index: 1;
   width: auto;
   height: 170%;
+}
+
+.image-right-2-hidden {
+  display: none;
 }
 
 .texte {

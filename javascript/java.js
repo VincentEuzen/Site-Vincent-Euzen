@@ -12,6 +12,9 @@ $(document).ready(function() {
     // }
     $('.left').toggleClass('all-screen-width');
     $('.right').toggleClass('right-hidden');
+    $('.image-right-1').toggleClass('image-right-1-hidden');
+    $('.image-right-2').toggleClass('image-right-2-hidden');
+    // $('.image-right-2').toggleClass('image-right-2-return');
     // $('.cercle-middle-fin').toggleClass('cercle-middle-fin-extend');
     // $('#img-semi-cercle').toggleClass('img-semi-cercle-extend');
     $('#hidden-text-menu').toggleClass("hidden-for-js");
