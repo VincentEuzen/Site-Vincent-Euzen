@@ -1195,9 +1195,26 @@ margin: 0 auto;
 }
     }
 
+.separateur3 {
+  height: 150px;
+}
 
+.contact-section {
+  height: 100vh;
+  background: #1E262A;
+  position: relative;
+}
 
-
+.h2-footer {
+font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 4vw;
+  color: white;
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  text-align: center;
+}
 
 
 
