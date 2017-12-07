@@ -768,8 +768,8 @@ margin: 0 auto;
   height: 490px;
   overflow: hidden;
   position: relative;
-  background: black;
   border-radius: 4px;
+  background: black;
 }
 
 .img-bg {
@@ -848,8 +848,8 @@ margin: 0 auto;
   height: 490px;
   overflow: hidden;
   position: relative;
-  background: #000000;
   border-radius: 4px;
+  background: black;
 }
 
 
@@ -956,8 +956,8 @@ margin: 0 auto;
   height: 490px;
   overflow: hidden;
   position: relative;
-  background: black;
   border-radius: 4px;
+  background: black;
 }
 
 .img-bg-3 {
@@ -1036,8 +1036,8 @@ margin: 0 auto;
   height: 490px;
   overflow: hidden;
   position: relative;
-  background: #000000;
   border-radius: 4px;
+  background: black;
 }
 
 
@@ -1125,9 +1125,27 @@ margin: 0 auto;
 }
     }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 545px) {
       .box-test-1 {
-        width: 350px;
+        width: 90vw;
+      }
+    }
+
+@media screen and (max-width: 545px) {
+      .box-test-2 {
+        width: 90vw;
+      }
+    }
+
+@media screen and (max-width: 545px) {
+      .box-test-3 {
+       width: 90vw;
+      }
+    }
+
+@media screen and (max-width: 545px) {
+      .box-test-4 {
+        width: 90vw;
       }
     }
 
@@ -1179,23 +1197,7 @@ margin: 0 auto;
 
 
 
-@media screen and (max-width: 650px) {
-      .box-test-2 {
-        width: 350px;
-      }
-    }
 
-@media screen and (max-width: 650px) {
-      .box-test-3 {
-        width: 350px;
-      }
-    }
-
-@media screen and (max-width: 650px) {
-      .box-test-4 {
-        width: 350px;
-      }
-    }
 
 
 
