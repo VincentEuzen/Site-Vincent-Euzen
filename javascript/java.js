@@ -112,8 +112,8 @@ function parallax(e, target, layer) {
 $(document).ready(function() {
 var pictures = [
         "https://img15.hostingpics.net/pics/864310testbgtop3.jpg",
-        "https://img15.hostingpics.net/pics/288742testbgtop4.jpg",
-        "https://img15.hostingpics.net/pics/785914testbgtop5.jpg",
+        "https://img15.hostingpics.net/pics/643404testbgtop10.jpg",
+        "https://img15.hostingpics.net/pics/384929testbgtop9.jpg",
 
     ];
     var img = document.getElementById("pic-me");
