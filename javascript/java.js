@@ -28,23 +28,6 @@ $(document).ready(function() {
 
   var scroll = new SmoothScroll('a[href*="#"]');
 
-  // Effet defilement
-
-  var defile;// l'element a deplacer
-var psinit = 580; // position horizontale de depart
-var pscrnt = psinit;
-function texteDefile() {
-if (!defile) defile = document.getElementById('text-defillant');
-if (defile) {
-if(pscrnt < ( - defile.offsetWidth) ){
-pscrnt = psinit;
-} else {
-pscrnt+= -1; // pixel par deplacement
-}
-defile.style.left = pscrnt+"px";
-}
-}
-setInterval("texteDefile()",20); // delai de deplacement
 });
 
 
@@ -124,28 +107,29 @@ function parallax(e, target, layer) {
 };
 
 
-//   // Changer photo dynamiquement top
+  // Changer photo dynamiquement top
 
-// $(document).ready(function() {
-// var pictures = [
-//         "https://img15.hostingpics.net/pics/809024vincenteuzenpicturewide.jpg",
-//         "https://img15.hostingpics.net/pics/314278Goodonesquare.png",
+$(document).ready(function() {
+var pictures = [
+        "https://img15.hostingpics.net/pics/864310testbgtop3.jpg",
+        "https://img15.hostingpics.net/pics/288742testbgtop4.jpg",
+        "https://img15.hostingpics.net/pics/785914testbgtop5.jpg",
 
-//     ];
-//     var img = document.getElementById("pic-me");
-//     var currentIndex = 0;
-//     var slideshowTimer;
+    ];
+    var img = document.getElementById("pic-me");
+    var currentIndex = 0;
+    var slideshowTimer;
 
-//     (function nextImg(){
-//         slideshowTimer = Date.now();
-//         img.src=pictures[currentIndex];
-//         img.onload=function(){
-//             currentIndex = (currentIndex + 1) % pictures.length;
-//             var remainingTime = 3000 - (Date.now() - slideshowTimer);
-//             if(remainingTime>0){ setTimeout(nextImg, remainingTime); }
-//             else { nextImg(); }
-//         };
-//     })();
+    (function nextImg(){
+        slideshowTimer = Date.now();
+        img.src=pictures[currentIndex];
+        img.onload=function(){
+            currentIndex = (currentIndex + 1) % pictures.length;
+            var remainingTime = 4000 - (Date.now() - slideshowTimer);
+            if(remainingTime>0){ setTimeout(nextImg, remainingTime); }
+            else { nextImg(); }
+        };
+    })();
 
-//     });
+    });
 
